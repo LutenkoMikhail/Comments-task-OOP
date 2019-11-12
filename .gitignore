@@ -1,0 +1,20 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/storage/app/public/images/comments
+/vendor
+/.idea
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+bags.fix
+Laravel Shop Structure.pptx
+# IDE helper meta-files
+/_ide_helper.php
+/.phpstorm.meta.php
+/_ide_helper_models.php
+dzencode-test tasks-oop-mvc-php.pdf
