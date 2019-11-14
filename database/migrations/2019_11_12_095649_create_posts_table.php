@@ -17,7 +17,6 @@ class CreatePostsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title', 50)->unique();
             $table->string('description', 200);
-            $table->text('thumbnail')->nullable();
             $table->timestamps();
         });
     }

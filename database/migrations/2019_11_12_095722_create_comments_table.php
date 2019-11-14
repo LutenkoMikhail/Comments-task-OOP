@@ -17,7 +17,6 @@ class CreateCommentsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('post_id');
             $table->unsignedBigInteger('parent_id')->nullable();
-            $table->unsignedBigInteger('parent_level')->default(0);
             $table->string('user_name',50);
             $table->string('user_email',255);
             $table->string('user_url',1024)->nullable();
@@ -30,7 +29,7 @@ class CreateCommentsTable extends Migration
         Schema::table('comments', function (Blueprint $table) {
             $table->foreign('post_id')
                 ->references('id')
-                ->on('posts');
+                ->on('posts')->onDelete('cascade');;
         });
     }
 
