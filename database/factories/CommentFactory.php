@@ -15,7 +15,12 @@ $factory->define(Comment::class, function (Faker $faker) {
         'user_url' => $faker->unique()->url,
         'user_ip' => $faker->unique()->ipv4,
         'user_browser' => $faker->userAgent,
-        'user_file' => $faker->image('public/storage/comments/files', 400, 300, null, true),
+        'user_file' => $faker->image(
+            'public/storage/comments/files',
+            400,
+            300,
+            null,
+            true),
         'text' => $faker->realText(100)
 
     ];

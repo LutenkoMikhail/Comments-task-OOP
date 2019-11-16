@@ -17,11 +17,11 @@ class CreateCommentsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('post_id');
             $table->unsignedBigInteger('parent_id')->nullable();
-            $table->string('user_name',50);
-            $table->string('user_email',255);
-            $table->string('user_url',1024)->nullable();
+            $table->string('user_name', 50);
+            $table->string('user_email', 255);
+            $table->string('user_url', 1024)->nullable();
             $table->ipAddress('user_ip');
-            $table->string('user_browser',255);
+            $table->string('user_browser', 255);
             $table->text('user_file')->nullable();
             $table->text('text');
             $table->timestamps();

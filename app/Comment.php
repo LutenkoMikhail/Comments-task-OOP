@@ -11,4 +11,9 @@ class Comment extends Model
         'user_name', 'user_email', 'user_url',
         'user_ip', 'user_browser', 'user_file', 'text'
     ];
+
+    public function post()
+    {
+        return $this->belongsTo('App\Post');
+    }
 }

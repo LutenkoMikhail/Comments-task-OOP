@@ -10,4 +10,9 @@ class Post extends Model
         'id', 'title', 'description', 'created_at', 'updated_at'
     ];
 
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+
 }
