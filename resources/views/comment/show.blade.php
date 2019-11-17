@@ -8,5 +8,11 @@
             {{__ ($comment->text)}}
             <hr>
         </div>
+        {{--        <div class="d-flex justify-content-between align-items-center">--}}
+        {{--            <div class="btn-group">--}}
+        {{--                <a href="{{ route('comment.create',  $post->id) }}"--}}
+        {{--                   class="btn btn-dark">{{ __('reply') }}</a>--}}
+        {{--            </div>--}}
+        {{--        </div>--}}
     </div>
 </div>
